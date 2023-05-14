@@ -1,0 +1,24 @@
+.location {
+    padding: 180px 0px;
+    position: relative;
+
+    &::before {
+        content: 'V';
+        top: 180px;
+        right: calc(50% + 555px);
+        transform: translate(50%, 0%);
+        line-height: 1;
+        z-index: -1;
+
+        @include decorNumber;
+    }
+}
+.location__title {
+    margin-bottom: 88px;
+}
+// .location__map {
+// }
+.map {
+    height: 358px;
+    background: #626262;
+}

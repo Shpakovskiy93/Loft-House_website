@@ -1,13 +1,18 @@
 // Base
-
 @import './base/reset';
 @import './base/vars';
+@import './base/mixins';
 @import './base/base';
-
 // Blocks
 @import './blocks/header';
 @import './blocks/nav';
 @import './blocks/info';
 @import './blocks/benefits';
 @import './blocks/appartments';
-@import './blocks/_card';
+@import './blocks/card';
+@import './blocks/cta';
+@import './blocks/form';
+@import './blocks/video';
+@import './blocks/location-map';
+@import './blocks/feedback';
+@import './blocks/footer';

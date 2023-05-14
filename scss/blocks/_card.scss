@@ -1,4 +1,4 @@
-.appartments__card {
+.apartments__card {
     display: inline-block;
     position: relative;
     color: $white;
@@ -36,18 +36,18 @@
         color: $white;
     }
 }
-.appartments__card-img {
+.apartments__card-img {
     position: relative;
     z-index: 5;
     transition: all .2s ease-in;
 }
 
-.appartments__card:hover .appartments__card-img {
+.apartments__card:hover .apartments__card-img {
     transform: scale(1.1);
     filter: contrast(110%) brightness(1.2) saturate(1.2);
 }
 
-.appartments__card-title {
+.apartments__card-title {
     position: absolute;
     z-index: 9;
     left: 50px;

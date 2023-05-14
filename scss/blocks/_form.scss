@@ -1,0 +1,40 @@
+// .form {
+// }
+.form__input {
+    height: 50px;
+    padding: 12px;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.2);
+    color: $white;
+    font-size: 14px;
+    transition: background-color .2s ease-in;
+
+    &::placeholder {
+        color: $placeholder;
+    }
+
+    &:focus {
+        background-color: rgba(255, 255, 255, 0.3);
+    }
+}
+.form__privarcy {
+    font-size: 13px;
+    line-height: 1.23;
+    text-align: center;
+    color: $muted;
+    max-width: 255px;
+}
+.form__btn {
+    height: 50px;
+    font-size: 16px;
+    background-color: $accent;
+    color: $white;
+    font-weight: bold;
+    text-align: center;
+    padding: 12px;
+    transition: background-color .2s ease-in;
+
+    &:hover {
+        background-color: saturate($accent, 20%);
+    }
+}
