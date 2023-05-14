@@ -1,0 +1,57 @@
+.appartments__card {
+    display: inline-block;
+    position: relative;
+    color: $white;
+    overflow: hidden;
+
+    &::before {
+        content: '';
+        position: absolute;
+        z-index: 6;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(180deg, rgba(36, 43, 51, 0) 0%, $dark 100%);
+    }
+
+    &::after {
+        opacity: 0;
+        content: '';
+        position: absolute;
+        z-index: 7;
+        right: 15px;
+        left: 15px;
+        top: 15px;
+        bottom: 15px;
+        border: 3px double rgba(255, 255, 255, 0.4);
+        transition: opacity .2s ease-in;
+    }
+
+    &:hover::after {
+        opacity: 1;
+    }
+
+    &:hover {
+        color: $white;
+    }
+}
+.appartments__card-img {
+    position: relative;
+    z-index: 5;
+    transition: all .2s ease-in;
+}
+
+.appartments__card:hover .appartments__card-img {
+    transform: scale(1.1);
+    filter: contrast(110%) brightness(1.2) saturate(1.2);
+}
+
+.appartments__card-title {
+    position: absolute;
+    z-index: 9;
+    left: 50px;
+    right: 20px;
+    bottom: 44px;
+    font-size: 24px;
+}
