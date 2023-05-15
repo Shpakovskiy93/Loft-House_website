@@ -3,14 +3,28 @@
     padding: 72px 0 51px;
     font-size: 14px;
     letter-spacing: 0.05rem;
+
+    @include mediaTablet {
+        padding: 36px 0 35px;;
+    }
 }
 .footer__wrapper {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 30px;
+
+    @include mediaTablet {
+        grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
+        gap: 40px;
+        text-align: center;
+    }
 }
 .footer__logo {
     margin-top: -12px;
+
+    @include mediaTablet {
+        margin-top: 0;
+    } 
 }
 // .footer__nav {
 // }
@@ -26,4 +40,8 @@
     display: flex;
     column-gap: 22px;
     align-items: center;
+
+    @include mediaTablet {
+        justify-content: center;
+    }    
 }

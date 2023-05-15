@@ -24,6 +24,10 @@ a {
     &--sm {
         max-width: 840px;
     }
+
+    @include mediaPhone {
+        padding: 0 10px;
+    }
 }
 
 .text-right {
@@ -51,8 +55,16 @@ a {
     font-size: 36px;
     line-height: 48px;
     color: $accent;
+
+    @include mediaTablet {
+        font-size: 28px;
+    }
 }
 .link-bold {
     color: $accent;
     font-weight: 700;
+}
+
+.no-scroll {
+    overflow-y: hidden;
 }

@@ -23,6 +23,13 @@
     text-align: center;
     color: $muted;
     max-width: 255px;
+    margin: 0 auto;
+
+    &--bottom {
+        @include mediaTablet {
+            grid-row: 4/5;
+        }
+    }
 }
 .form__btn {
     height: 50px;

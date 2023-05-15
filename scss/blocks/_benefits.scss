@@ -1,4 +1,6 @@
 .benefits {
+    overflow: hidden;
+
     position: relative;
     padding: 120px 0;
 
@@ -10,17 +12,37 @@
         line-height: 1.15;
 
         @include decorNumber;
+
+        @include mediaTablet {
+            content: '';
+        }
+    }
+
+    @include mediaTablet {
+        padding: 60px 0px;
     }
 }
 .benefits__items {
     display: flex;
     column-gap: 70px;
+
+    @include mediaTablet {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
+        gap: 40px;
+    }
 }
 .benefits__item {
     text-align: center;
 }
 .benefits__item-img {
     margin-bottom: 53px;
+
+    @include mediaTablet {
+        width: 60px;
+        height: 60px;
+        margin-bottom: 20px;
+    }
 }
 .benefits__item-text {
     font-family: $font-secondary;
@@ -30,4 +52,8 @@
     line-height: 1.35;
     text-align: center;
     color: $white;
+
+    @include mediaTablet {
+        font-size: 16px;
+    }
 }

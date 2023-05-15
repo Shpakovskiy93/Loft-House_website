@@ -12,9 +12,21 @@
 
         @include decorNumber;
     }
+
+    @include mediaTablet {
+        padding: 90px 0;
+    }
+
+    @include mediaPhone {
+        padding: 30px 0;
+    }
 }
 .location__title {
     margin-bottom: 88px;
+    
+    @include mediaTablet {
+        margin-bottom: 44px;
+    }
 }
 // .location__map {
 // }
