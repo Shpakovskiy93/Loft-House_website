@@ -5,6 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./libs/youtubeLightbox/youtubeLightbox.css">
+    <script src="./libs/phoneMask/mask.js" defer></script>
+    <script src="./libs/phoneMask/mask_list.js" defer></script>
+    <script src="./libs/youtubeLightbox/youtubeLightbox.js" defer></script>
+    <script async src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAv829TkqnPVl-40mIeTjIKSyBy7PLf1Ic&callback=initMap"></script>
     <script src="./js/main.js" defer></script>
     <title>Loft House</title>
 </head>
@@ -131,7 +136,7 @@
                     </div>
                     <form class="cta__form form">
                         <input class="form__input" type="text" placeholder="Ваше имя">
-                        <input class="form__input" type="text" placeholder="Ваш телефон">
+                        <input class="form__input" data-tel-input type="text" placeholder="Ваш телефон">
                         <p class="form__privarcy form__privarcy--bottom">
                             *Мы никому не передаем ваши данные. 
                             И не сохраняем ваш номер в базу.
@@ -145,7 +150,7 @@
         <section class="video">
             <h2 class="visually-hidden">video about loft house</h2>
             <div class="container">
-                <a class="video__link" href="#">
+                <a class="video__link" href="https://www.youtube.com/watch?v=1B_Lgkp8QEM" data-youtubeLightbox>
                     <img class="video__icon" src="./img/video/play-button.svg" alt="button play video">
                     <img class="video__img" src="./img/video/video-bg.jpg" alt="image video">
                 </a>
@@ -174,7 +179,7 @@
                         И не сохраняем ваш номер в базу.
                     </p>
                     <input class="form__input" type="text" placeholder="Ваше имя">
-                    <input class="form__input" type="text" placeholder="Ваш телефон"> 
+                    <input class="form__input" data-tel-input type="text" placeholder="Ваш телефон"> 
                     <button class="form__btn" type="submit">Посмотреть район</button>
                 </form>
             </div>
@@ -270,6 +275,15 @@
             </div>
         </div>
     </footer>
+
+    <!-- youTube lightBox -->
+    <div class="youtubelightbox" id="youtubelightbox">
+        <div class="youtubelightbox__centeredchild">
+            <div class="youtubelightbox__videowrapper">
+                <div id="youtubelightboxPlayer"></div>
+            </div>
+        </div>
+    </div>
     
 </body>
 </html>
